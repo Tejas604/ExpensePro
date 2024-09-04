@@ -1,7 +1,27 @@
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./*"],
+    
+//     }
+//   }
+// }
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./*"],           // Existing alias
+//       "@/lib/*": ["./lib/*"]     // New alias for lib directory
+//     }
+//   }
+//   // 
+// }
 {
   "compilerOptions": {
+    "baseUrl": ".", 
     "paths": {
-      "@/*": ["./*"]
+      "@/components/*": ["./@/components/*"],   // Alias for components directory
+      "@/lib/*": ["./lib/*"]                    // Alias for lib directory
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
